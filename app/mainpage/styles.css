@@ -1,0 +1,22 @@
+.mainpage-container{
+    position: absolute;
+    width: 100%;
+    height: 1800px;
+    opacity: .85;
+    z-index: 10;
+	background-color: black;
+}
+
+.mainpage-box-container{
+    position: absolute;
+    height: 75%;
+    width:1200px;
+    margin-top: 0px;
+    left:0;
+    right:0;
+    top:300px;
+	background: rgb(150,150,150);
+    margin-left: auto;
+    margin-right: auto;
+}
+

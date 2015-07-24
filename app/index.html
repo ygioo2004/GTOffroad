@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GT Offroad</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="mainpage/styles.css">
+  <link rel="stylesheet" href="calendar/styles.css">
+  <link rel="stylesheet" href="interested/styles.css">
+  <link rel="stylesheet" href="history/styles.css">
+  <link rel="stylesheet" href="rankings/styles.css">
+  <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css"/>
+  <link rel="stylesheet" href="directives/styles/boxItem.css"/>
+  
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  
+</head>
+<body ng-controller="RootCtrl as root">
+
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="homepage-container">
+    <!--this holds the picture at the top-->
+    <div class="homepage-main-window" ng-cloak> 
+        <div class="homepage-main-picture-container" ng-click="root.changeLoc('/')">    
+            <img src="images/GTOR_logo.PNG" width="800px" height="100px"/>
+        </div>
+    </div>
+    <!--this is where different "pages" are loaded in-->
+    <div ng-view>
+
+    </div>
+  </div>
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+  
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="mainpage/mainpage.js"></script>
+    <script type="text/javascript" src="calendar/calendar.js"></script>
+    <script type="text/javascript" src="interested/interested.js"></script>
+    <script type="text/javascript" src="history/history.js"></script>
+    <script type="text/javascript" src="rankings/rankings.js"></script>
+    <script type="text/javascript" src="components/version/version.js"></script>
+    <script type="text/javascript" src="components/version/version-directive.js"></script>
+    <script type="text/javascript" src="components/version/interpolate-filter.js"></script>
+    <script type="text/javascript" src="directives/directives.js"></script>
+
+  
+    <!--angular-ui-calendar-->
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="bower_components/fullcalendar/dist/gcal.js"></script>
+  
+  
+</body>
+</html>
