@@ -1,11 +1,10 @@
 <div class="mainpage-box{{data.num}} mainpage-allbox"
      ng-mouseenter="data.hover = !data.hover"
      ng-mouseleave="data.hover = !data.hover">
-    <div class="mainpage-box-shadow-show" 
-         ng-class="{'mainpage-box-shadow-hide' : data.hover}"
-
-         ng-click="boxClicked()">
-        
+    <div class="mainpage-box-shadow" 
+         ng-click="boxClicked()"
+         ng-if="!data.clicked">
+            
     </div>
     
     <div class="mainpage-box-text">
@@ -13,7 +12,7 @@
 
     </div>
 
-    <div ng-if="data.text" class="mainpage-box-bodytext">
+    <div ng-if="data.text" class="mainpage-box-bodytext" ng-click="boxClicked()">
         {{data.text}}
     </div>
     
@@ -36,9 +35,11 @@
     </div>
     
     <div class="mainpage-box-cover" 
-         ng-if="data.clicked == false">
+         ng-if="data.clicked == false"
+         >
         <div class="mainpage-box{{data.num}}-picture" 
              ng-if="data.num != 5" 
+
              >
             <img ng-src="images/img{{data.num}}.jpg" width="100%" height="100%"/>
         </div>

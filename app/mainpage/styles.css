@@ -9,14 +9,30 @@
 
 .mainpage-box-container{
     position: absolute;
-    height: 75%;
-    width:1200px;
+    height: 175%;
+    width: 100%;
+    max-height: 1200px;
+    min-height: 600px;
+    max-width: 1200px;
+    min-width: 600px;
     margin-top: 0px;
-    left:0;
-    right:0;
-    top:300px;
-	background: rgb(150,150,150);
+    left: 0;
+    right: 0;
+    top: 300px;
+    background: rgb(150,150,150);
     margin-left: auto;
     margin-right: auto;
 }
 
+.wrapper {
+  width: 100%;
+  /* whatever width you want */
+  display: inline-block;
+  position: relative;
+}
+.wrapper:after {
+  padding-top: 56.25%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
