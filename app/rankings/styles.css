@@ -1,0 +1,31 @@
+.ranking-box-container{    
+    position: absolute;
+    border-radius: 5px 5px;
+    height: auto;
+    width:1000px;
+    margin-top: 0px;
+    margin-bottom: 200px;
+    left:0;
+    right:0;
+    top:200px;
+	background: rgb(30,30,30);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    color: lightgray;
+    line-height: 175%;
+}
+
+.ranking-item-container{
+    position: relative;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.ranking-location-container{
+    position: relative;
+    width: 30%;
+    float: left;
+    margin: 0 10px 0 10px;
+    
+}

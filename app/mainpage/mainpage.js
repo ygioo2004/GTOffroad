@@ -58,21 +58,6 @@ angular.module('myApp.mainpage', ['ngRoute'])
 			num: 8
 		},
 	]
-	
-	this.currentSlide = 3;
-	this.changeSlide = function(num){
-		if (num == 0){
-			this.currentSlide = this.currentSlide - 1;
-			if (this.currentSlide < 1){
-				this.currentSlide = 1;
-			}
-		} else {
-			this.currentSlide = this.currentSlide + 1;
-			if (this.currentSlide > 8){
-				this.currentSlide = 8;
-			}
-		}
-	}
 }])
 
 

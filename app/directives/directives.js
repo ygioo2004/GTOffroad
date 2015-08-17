@@ -19,7 +19,7 @@ angular.module('myApp.directives', [
                     $location.url($scope.data.link);
                 }
             }
-            $scope.currentSlide = 3;
+            $scope.currentSlide = 1;
             $scope.changeSlide = function(num){
                 if (num == 0){
                     $scope.currentSlide = $scope.currentSlide - 1;
