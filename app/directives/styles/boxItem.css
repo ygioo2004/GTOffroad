@@ -271,7 +271,7 @@
 }
 
 .mainpage-slideshow-highlight{
-    background: red;
+/*    background: red;*/
     /*include ng-animate for slideshow transitions to work*/
 	-webkit-transition: .2s linear;
     -moz-transition: .2s linear;

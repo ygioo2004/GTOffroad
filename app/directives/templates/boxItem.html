@@ -45,9 +45,7 @@
         <div class="mainpage-box{{data.num}}-picture"
              ng-if="data.num == 5">
             <div ng-repeat="image in imageCycle">
-                <div class="fade"
-                     ng-if="image.num == currentSlide"
-                     ng-style="{'z-index' : '500'}">
+                <div ng-if="image.num == currentSlide">
                     <img ng-src="{{image.src}}" width="100%" height="100%"/>		
                 </div>
             </div>
