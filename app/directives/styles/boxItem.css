@@ -207,6 +207,25 @@
   display: block !important;
 }
 
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.fade.ng-leave {
+  transition:0.5s linear all;
+  opacity:0;
+}
+.fade.ng-leave.ng-leave-active {
+  opacity:1;
+}
+
 .mainpage-slideshow-right-show{
 	position: absolute;
 	right: 0;

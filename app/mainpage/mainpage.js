@@ -1,6 +1,9 @@
 'use strict';
 
-angular.module('myApp.mainpage', ['ngRoute'])
+angular.module('myApp.mainpage', [
+    'ngRoute',
+    'ngAnimate'
+])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/mainpage', {
