@@ -12,7 +12,7 @@ angular.module('myApp', [
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/mainpage'});
+  $routeProvider.otherwise({redirectTo: 'mainpage'});
 }])
 .controller('RootCtrl', ['$rootScope','$location', function($rootScope, $location){
 	this.changeLoc = function(addr){
