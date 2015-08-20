@@ -27,40 +27,52 @@ angular.module('myApp.mainpage', [
         MainmenuBoxes.getNull()
 	]
 	
-	this.images = [
-		{
-			src: 'images/gallery/img-cycle1.jpg',
-			num: 1
-		},
-		{
-			src:'images/gallery/img-cycle2.jpg',
-			num: 2
-		},
-		{
-			src:'images/gallery/img-cycle3.jpg',
-			num: 3
-		},
-		{
-			src:'images/gallery/img-cycle4.jpg',
-			num: 4
-		},
-		{
-			src:'images/gallery/img-cycle5.jpg',
-			num: 5
-		},
-		{
-			src:'images/gallery/img-cycle6.jpg',
-			num: 6
-		},
-		{
-			src:'images/gallery/img-cycle7.jpg',
-			num: 7
-		},
-		{
-			src:'images/gallery/img-cycle8.jpg',
-			num: 8
-		},
-	]
+
+    
+//	this.images = [
+//		{
+//			src: 'images/gallery/img-cycle1.jpg',
+//			num: 1
+//		},
+//		{
+//			src:'images/gallery/img-cycle2.jpg',
+//			num: 2
+//		},
+//		{
+//			src:'images/gallery/img-cycle3.jpg',
+//			num: 3
+//		},
+//		{
+//			src:'images/gallery/img-cycle4.jpg',
+//			num: 4
+//		},
+//		{
+//			src:'images/gallery/img-cycle5.jpg',
+//			num: 5
+//		},
+//		{
+//			src:'images/gallery/img-cycle6.jpg',
+//			num: 6
+//		},
+//		{
+//			src:'images/gallery/img-cycle7.jpg',
+//			num: 7
+//		},
+//		{
+//			src:'images/gallery/img-cycle8.jpg',
+//			num: 8
+//		},
+//	]
+    
+    this.images = [];
+    
+    var totalImages = 8
+    for(var i = 1; i <= totalImages; i++){
+        this.images.push({
+            src:'images/gallery/img-cycle' + i + '.jpg',
+			num: i
+        })
+    }
 }])
 
 

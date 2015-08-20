@@ -3,7 +3,7 @@
 angular.module('myApp.directives', [
   'ngRoute'
 ])
-.directive('boxItem', ['$location', function($location){
+.directive('boxItem', ['$location', '$window', '$anchorScroll', function($location, $window, $anchorScroll){
     return {
         restrict: 'E',
         templateUrl: 'directives/templates/boxItem.html',
@@ -32,7 +32,7 @@ angular.module('myApp.directives', [
                         $scope.currentSlide = $scope.imageCycle.length;
                     }
                 }
-	}
+	       }
         }
 
     }

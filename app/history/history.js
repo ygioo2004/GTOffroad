@@ -12,7 +12,6 @@ angular.module('myApp.history', [
 }])
 
 .controller('HistoryCtrl', ['$location', '$window', 'HistoryYears', function(location, $window, historyYears) {
-    $window.scroll(0,0);
     this.years = historyYears.getHistoryYears();
     
 }])

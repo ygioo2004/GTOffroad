@@ -10,11 +10,11 @@ angular.module('myApp', [
   'myApp.rankings',
   'myApp.directives',
   'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
+])
+.config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: 'mainpage'});
 }])
-.controller('RootCtrl', ['$rootScope','$location', function($rootScope, $location){
+.controller('RootCtrl', ['$rootScope','$location', '$scope', '$window', '$anchorScroll', '$timeout', function($rootScope, $location, $scope, $window, $anchorScroll, $timeout){
 	this.changeLoc = function(addr){
 		$location.url(addr);
 	}

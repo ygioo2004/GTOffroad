@@ -14,14 +14,13 @@ angular.module('myApp.calendar', [
 
 .controller('CalendarCtrl', ['$rootScope','$window', function($rootScope,$window) {
   
-   $window.scroll(0,0);
     this.uiConfig = {
       calendar:{
         height: 650,
         editable: false,
-        googleCalendarApiKey: 'AIzaSyBTbSupjRMeFtG775xgtECG37-kacTLOfA',
+        googleCalendarApiKey: 'AIzaSyAMht8xAji5_1coADCfXjsn7On1J7Txagk',
         events: {
-            googleCalendarId: 'gtoffroadcalendar@gmail.com'
+            googleCalendarId: 'georgiatechoffroad@gmail.com'
         },
         loading: function(bool) {
             $('#loading').toggle(bool);
