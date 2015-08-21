@@ -121,8 +121,268 @@ angular.module('myApp.rankings', ['ngRoute'])
                     ]
                 }
             ]
+        },
+        {
+            year: 2006,
+            locations: [
+                {
+                    name: 'Midwest',
+                    details :[
+                        {
+                            event: 'Acceleration',
+                            place: 38
+                        },
+                        {
+                            event: 'Chain Pull',
+                            place: 41
+                        }
+                    ]
+                },
+                {
+                    name: 'East',
+                    details: [
+                        {
+                            event: 'Overall Design',
+                            place: 22
+                        },
+                        {
+                            event: 'Water Maneuverability',
+                            place: 20
+                        },
+                        {
+                            event: 'Land Maneuverability',
+                            place: 21
+                        },
+                        {
+                            event: 'Suspension & Tracking Course',
+                            place: 17
+                        },
+                        {
+                            event: 'Overall',
+                            place: 28
+                        }
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            year: 2007,
+            locations: [
+                {
+                    name: 'Rochester, NY',
+                    details: [
+                        {
+                            event: 'Endurance',
+                            place: 32
+                        },
+                        {
+                            event: 'Overall',
+                            place: 47
+                        },
+                        {
+                            event: 'Acceleration',
+                            place: 54
+                        },
+                        {
+                            event: 'Manueverability',
+                            place: 35
+                        },
+                        {
+                            event: 'Hill Climb',
+                            place: 40
+                        },
+                        {
+                            event: 'Suspension & Traction',
+                            place: 16
+                        }
+                    ]
+                },
+                {
+                    name: 'South Dakota',
+                    details: [
+                        {
+                            event: 'Endurance',
+                            place: 56
+                        },
+                        {
+                            event: 'Maneuverability',
+                            place: 32
+                        }
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            year: 2008,
+            locations: [
+                {
+                    name: 'Tennesse',
+                    details: [
+                        {
+                            event: 'Overall',
+                            place: 11
+                        },
+                        {
+                            event: 'Endurance',
+                            place: 5
+                        },
+                        {
+                            event: 'Autodesk Inventor Design Communication Award',
+                            place: 2
+                        }
+                    ]
+                },
+                {
+                    name: 'Montreal',
+                    details: [
+                        {
+                            event: 'Overall',
+                            place: 40
+                        },
+                        {
+                            event: 'Suspension & Traction',
+                            place: 20
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            year: 2009,
+            locations: [
+                {
+                    name: 'Alabama',
+                    details: [
+                        {
+                            event: 'Overall',
+                            place: 31
+                        },
+                        {
+                            event: 'Endurance',
+                            place: 48
+                        },
+                        {
+                            event: 'Suspension & Traction',
+                            place: 16
+                        },
+                        {
+                            event: 'Pull',
+                            place: 71
+                        },
+                        {
+                            event: 'Land Manuverability',
+                            place: 11
+                        },
+                        {
+                            event: 'Acceleration',
+                            place: 32
+                        },
+                        {
+                            event: 'Cost',
+                            place: 16
+                        }
+                        
+                    ]
+                },
+                {
+                    name: 'Wisconsin',
+                    details: [
+                        {
+                            event: 'Overall',
+                            place: 24
+                        },
+                        {
+                            event: 'Endurance',
+                            place: 26
+                        },
+                        {
+                            event: 'Design',
+                            place: 7
+                        },
+                        {
+                            event: 'Cost',
+                            place: 26
+                        }
+                        
+                    ]
+                },
+                {
+                    name: 'Tennesse',
+                    details: [
+                        {
+                            event: 'Overall',
+                            place: 11
+                        },
+                        {
+                            event: 'Endurance',
+                            place: 5
+                        },
+                        {
+                            event: 'Autodesk Inventor Design Communication Award',
+                            place: 2
+                        }
+                    ]
+                },
+                {
+                    name: 'Montreal',
+                    details: [
+                        {
+                            event: 'Overall',
+                            place: 40
+                        },
+                        {
+                            event: 'Suspension & Traction',
+                            place: 20
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            year: 2012,
+            locations: [
+                {
+                    name: 'Auburn',
+                    details: [
+                        {
+                            event: 'Suspension and Traction',
+                            place: 12
+                        },
+                        {
+                            event: 'Design',
+                            place: 25
+                        },
+                        {
+                            event: 'Cost',
+                            place: 37
+                        },
+                        {
+                            event: 'Endurance',
+                            place: 63
+                        },
+                        {
+                            event: 'Land Maneuverability',
+                            place: 12
+                        },
+                        {
+                            event: 'Acceleration',
+                            place: 51
+                        },
+                        {
+                            event: 'Hill Climb',
+                            place: 59
+                        },
+                        {
+                            event: 'Overall',
+                            place: 47
+                        },
+                    ]
+                }
+            ]
         }
     ]
-    console.log(this.ranks);
                              
 }])
