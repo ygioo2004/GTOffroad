@@ -16,9 +16,11 @@ angular.module('myApp.calendar', [
   
     this.uiConfig = {
       calendar:{
+        eventColor: 'steelblue',
+        eventTextColor: 'white',
         height: 650,
         editable: false,
-        googleCalendarApiKey: 'AIzaSyAMht8xAji5_1coADCfXjsn7On1J7Txagk',
+        googleCalendarApiKey: 'AIzaSyD0L6eWDQpoDh4QcWhwYjK7ZXmRaqwHB-8',
         events: {
             googleCalendarId: 'georgiatechoffroad@gmail.com'
         },
