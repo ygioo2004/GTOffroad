@@ -1,0 +1,10 @@
+<div class="history-box-container">
+    <div class="history-title"><h2>History</h2></div>
+    <div ng-repeat="year in history.years">
+        <hr/>
+        <div class="history-item-container">
+            <h3>{{year.year}}</h3>
+            <p> {{year.desc}}</p>
+        </div>
+    </div>
+</div>

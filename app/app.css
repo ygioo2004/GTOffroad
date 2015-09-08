@@ -1,0 +1,41 @@
+/* app css stylesheet */
+
+html { 
+    height: 100%; 
+    overflow:hidden; 
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    height: 100%;
+    overflow: hidden
+}
+
+.homepage-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: rgb(20,20,20);
+}
+
+
+.homepage-main-window{
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+    z-index: 20;
+    height: 100px;
+    overflow: hidden;
+    background-image: url(images/bg_color.PNG);
+}
+
+.homepage-main-picture-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 10px;
+    cursor: pointer;
+}

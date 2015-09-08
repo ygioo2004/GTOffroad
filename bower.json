@@ -1,0 +1,22 @@
+{
+  "name": "angular-seed",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-animate": "~1.4.3",
+    "angular-mocks": "~1.4.0",
+    "html5-boilerplate": "~5.2.0",
+    "angular-ui-calendar": "latest"
+  },
+  "resolutions": {
+    "angular": "1.4.4",
+    "fullcalendar": "2.3.1",
+    "angular-animate": "1.4.3"
+  }
+}
