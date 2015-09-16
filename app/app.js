@@ -3,6 +3,7 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
+  'ngAnimate',
   'myApp.mainpage',
   'myApp.calendar',
   'myApp.interested',
@@ -14,7 +15,7 @@ angular.module('myApp', [
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: 'mainpage'});
 }])
-.controller('RootCtrl', ['$rootScope','$location', '$scope', '$window', '$anchorScroll', '$timeout', function($rootScope, $location, $scope, $window, $anchorScroll, $timeout){
+.controller('RootCtrl', ['$rootScope','$location', '$scope', '$anchorScroll', function($rootScope, $location, $scope, $anchorScroll){
 	this.changeLoc = function(addr){
 		$location.url(addr);
 	}

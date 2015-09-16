@@ -12,10 +12,25 @@ angular.module('myApp.mainpage', [
   });
 }])
 
-.controller('MainpageCtrl', ['$location', 'MainmenuBoxes', function(location, MainmenuBoxes) {
+.controller('MainpageCtrl', ['$location', 'MainmenuBoxes', 'boxDataService','$timeout',function(location, MainmenuBoxes, boxDataService,$timeout) {
+    var vm = this;
+    vm.boxData = null;
+    
+    vm.counter = 0;
+    vm.onTimeout = function(){
+        vm.counter++;
+        mytimeout = $timeout(vm.onTimeout,1000);
+    }
+    var mytimeout = $timeout(vm.onTimeout,1000);
+    
 
     
-	this.box = [
+    boxDataService.getData().then(function(res){
+        vm.boxData = res.data;
+        console.log(vm.boxData);
+    });
+    
+	vm.box = [
         MainmenuBoxes.getCalendar(),
         MainmenuBoxes.getWhatIsGtor(),
         MainmenuBoxes.getHowDoIJoin(),
@@ -27,48 +42,12 @@ angular.module('myApp.mainpage', [
         MainmenuBoxes.getNull()
 	]
 	
-
     
-//	this.images = [
-//		{
-//			src: 'images/gallery/img-cycle1.jpg',
-//			num: 1
-//		},
-//		{
-//			src:'images/gallery/img-cycle2.jpg',
-//			num: 2
-//		},
-//		{
-//			src:'images/gallery/img-cycle3.jpg',
-//			num: 3
-//		},
-//		{
-//			src:'images/gallery/img-cycle4.jpg',
-//			num: 4
-//		},
-//		{
-//			src:'images/gallery/img-cycle5.jpg',
-//			num: 5
-//		},
-//		{
-//			src:'images/gallery/img-cycle6.jpg',
-//			num: 6
-//		},
-//		{
-//			src:'images/gallery/img-cycle7.jpg',
-//			num: 7
-//		},
-//		{
-//			src:'images/gallery/img-cycle8.jpg',
-//			num: 8
-//		},
-//	]
-    
-    this.images = [];
+    vm.images = [];
     
     var totalImages = 8
     for(var i = 1; i <= totalImages; i++){
-        this.images.push({
+        vm.images.push({
             src:'images/gallery/img-cycle' + i + '.jpg',
 			num: i
         })
@@ -76,16 +55,16 @@ angular.module('myApp.mainpage', [
 }])
 
 
-
-/*-----------------------------factories--------------------------------------*/
-
-
-
-.factory('MainmenuBoxes', [function(){
+.factory('MainmenuBoxes', ['boxDataService',function(boxDataService){
+    
+    var vm = this;
+    vm.resData = 'None';
+    
     return{
         getCalendar: function(){
+
             var obj = {
-                num: 1,
+                num: 0,
                 desc: "Calendar",
                 hover: false,
                 link: "calendar",
@@ -97,7 +76,7 @@ angular.module('myApp.mainpage', [
         },
         getWhatIsGtor: function(){
             var obj = {
-                num: 2,
+                num: 1,
                 desc: "What is GTOR?",
                 hover: false,
                 link: "",
@@ -108,7 +87,7 @@ angular.module('myApp.mainpage', [
         },
         getHowDoIJoin : function(){
             var obj = {
-                num: 3,
+                num: 2,
                 desc: "How Do I Join?",
                 hover: false,
                 link: "",
@@ -119,7 +98,7 @@ angular.module('myApp.mainpage', [
         },
         getInterested: function(){
             var obj = {
-                num: 4,
+                num: 3,
                 desc: "Interested?",
                 hover: false,
                 link: "interested",
@@ -130,7 +109,7 @@ angular.module('myApp.mainpage', [
         },
         getPhotosAndVid: function(){
             var obj = {
-                num: 5,
+                num: 4,
                 desc: "Photos",
                 hover: false,
                 link: "photosandvideos",
@@ -141,7 +120,7 @@ angular.module('myApp.mainpage', [
         },
         getHistory: function(){
             var obj = {
-                num: 6,
+                num: 5,
                 desc: "",
                 hover: false,
                 link: "mainpage",
@@ -152,7 +131,7 @@ angular.module('myApp.mainpage', [
         },
         getRankings: function(){
             var obj = {
-                num: 7,
+                num: 6,
                 desc: "Rankings",
                 hover: false,
                 link: "rankings",
@@ -163,7 +142,7 @@ angular.module('myApp.mainpage', [
         },
         getContact: function(){
             var obj = {
-                num: 8,
+                num: 7,
                 desc: "Contact",
                 hover: false,
                 link: "",
@@ -174,7 +153,7 @@ angular.module('myApp.mainpage', [
         },
         getNull: function(){
             var obj = {
-                num: 9,
+                num: 8,
                 desc: "",
                 hover: false,
                 link: "mainpage",
@@ -186,4 +165,20 @@ angular.module('myApp.mainpage', [
         
     }
         
-}]);
+}])
+
+.service('boxDataService', function($http) {
+    delete $http.defaults.headers.common['X-Requested-With'];
+    this.getData = function() {
+        return $http({
+            url: '/app/mainpage/box_info.txt',
+            dataType: 'json',
+            method: 'GET',
+            data: '',
+            headers: {
+                "Content-Type": "application/json"
+            }
+         });
+    }
+
+});

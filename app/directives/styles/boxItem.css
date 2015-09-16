@@ -74,110 +74,110 @@
   opacity:1;
 }
 
-.mainpage-box1{
+.mainpage-box0{
 	text-align: center;
     width: 30%;
     left:0;
     height:30%;
 }
 
-.mainpage-box2{
+.mainpage-box1{
     width: 40%;
     left:30%;
     height:50%;
 }
 
-.mainpage-box3{
+.mainpage-box2{
     width: 30%;
     right:0;
     height:40%;
 }
 
-.mainpage-box4{
+.mainpage-box3{
     width: 30%;
     left:0;
     top:30%;
     height:20%;
 }
 
-.mainpage-box5{
+.mainpage-box4{
     width: 70%;
     top:50%;
     left:0%;
     height:30%;
 }
 
-.mainpage-box6{
+.mainpage-box5{
     width: 30%;
     top:40%;
     right:0%;
     height:30%;
 }
 
-.mainpage-box7{
+.mainpage-box6{
     width: 30%;
     top:70%;
     right:0%;
     height:30%;
 }
 
-.mainpage-box8{
+.mainpage-box7{
     width: 40%;
     top:80%;
     left:0%;
     height:20%;
 }
 
-.mainpage-box9{
+.mainpage-box8{
     width: 30%;
     top:80%;
     left:40%;
     height:20%;
 }
 
-.mainpage-box1-picture{
+.mainpage-box0-picture{
     position: absolute;
     width: 130%;
     left: -30%;
     height: 100%;
 }
-.mainpage-box2-picture{
+.mainpage-box1-picture{
     position: absolute;
     left: -200px;
     width:200%;
     height: 100%;
 
 }
-.mainpage-box3-picture{
+.mainpage-box2-picture{
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.mainpage-box4-picture{
+.mainpage-box3-picture{
     position: absolute;
     
     width:100%;
     height: 100%;
 }
-.mainpage-box6-picture{
+.mainpage-box5-picture{
     position: absolute;
     width:200%;
     left: -200px;
     height: 100%;
 }
-.mainpage-box7-picture{
+.mainpage-box6-picture{
     position: absolute;
     width:150%;
     left: -30%;
     height: 100%;
 }
-.mainpage-box8-picture{
+.mainpage-box7-picture{
     position: absolute;
     width:130%;
     left: -30%;
     height: 130%;
 }
-.mainpage-box9-picture{
+.mainpage-box8-picture{
     position: absolute;
     width:110%;
     left: 0%;
@@ -225,6 +225,26 @@
 .fade.ng-leave.ng-leave-active {
   opacity:1;
 }
+
+
+.animate-if {
+
+}
+
+.animate-if.ng-enter, .animate-if.ng-leave {
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.animate-if.ng-enter,
+.animate-if.ng-leave.ng-leave-active {
+  opacity:0;
+}
+
+.animate-if.ng-leave,
+.animate-if.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
 
 .mainpage-slideshow-right-show{
 	position: absolute;
