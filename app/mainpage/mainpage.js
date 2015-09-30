@@ -12,16 +12,11 @@ angular.module('myApp.mainpage', [
   });
 }])
 
-.controller('MainpageCtrl', ['$location', 'MainmenuBoxes', 'boxDataService','$timeout',function(location, MainmenuBoxes, boxDataService,$timeout) {
+.controller('MainpageCtrl', ['$location', 'MainmenuBoxes', 'boxDataService','$timeout',function(location, MainmenuBoxes, boxDataService) {
     var vm = this;
     vm.boxData = null;
     
-    vm.counter = 0;
-    vm.onTimeout = function(){
-        vm.counter++;
-        mytimeout = $timeout(vm.onTimeout,1000);
-    }
-    var mytimeout = $timeout(vm.onTimeout,1000);
+
     
 
     
