@@ -19,17 +19,13 @@ angular.module('myApp', [
 	this.changeLoc = function(addr){
 		$location.url(addr);
 	}
+    
+    this.jumpToLocation = function(){
+        $location.hash("foobar");
+        $anchorScroll();
+        console.log("activated");
+    }
+    
+    this.foo = "bar";
+    
 }])
-.run(function($rootScope, $window) {
-
-  $rootScope.$on('$routeChangeSuccess', function () {
-
-    var interval = setInterval(function(){
-      if (document.readyState == 'complete') {
-        $window.scrollTo(0, 0);
-        clearInterval(interval);
-      }
-    }, 200);
-
-  });
-});
