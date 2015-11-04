@@ -64,3 +64,11 @@ angular.module('myApp.directives', [
 
     }
 }])
+.directive('appFooter', [function(){
+    return {
+        restrict: 'E',
+        templateUrl: 'directives/templates/footer.html',
+        scope: {}
+    }
+
+}])

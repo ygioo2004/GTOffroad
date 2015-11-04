@@ -1,7 +1,7 @@
 
 .mainpage-box-container{
-    position: absolute;
-    height: 190%;
+    position: relative;
+    height: 100%;
     width: 100%;
     max-height: 1300px;
     min-height: 600px;
@@ -11,9 +11,7 @@
     margin-bottom: 200px;
     left: 0;
     right: 0;
-    top: 350px;
-/*    top: 300px;*/
-/*    top: 700px;*/
+    top: 200px;
     background: rgb(150,150,150);
     margin-left: auto;
     margin-right: auto;
@@ -34,9 +32,9 @@
 }
 
 .mainpage-temp-rsvp{
-    position: absolute;
+    position: relative;
     height: auto;
-    top: 190px;
+    top: 100px;
     text-align: center;
     color: white;
     font-size: 16px;
@@ -67,10 +65,6 @@
   /* whatever width you want */
   display: inline-block;
   position: relative;
+  height: 1400px;
 }
-.wrapper:after {
-  padding-top: 56.25%;
-  /* 16:9 ratio */
-  display: block;
-  content: '';
-}
+

@@ -52,7 +52,7 @@ angular.module('myApp.mainpage', [
     delete $http.defaults.headers.common['X-Requested-With'];
     this.getData = function() {
         return $http({
-            url: '/mainpage/box_info.txt',
+            url: 'mainpage/box_info.txt',
             dataType: 'json',
             method: 'GET',
             data: '',
