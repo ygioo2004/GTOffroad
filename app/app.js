@@ -20,12 +20,10 @@ angular.module('myApp', [
 		$location.url(addr);
 	}
     
-    this.jumpToLocation = function(){
-        $location.hash("foobar");
+    this.jumpToLocation = function(value){
+        $location.hash(value);
         $anchorScroll();
-        console.log("activated");
     }
-    
-    this.foo = "bar";
+
     
 }])
