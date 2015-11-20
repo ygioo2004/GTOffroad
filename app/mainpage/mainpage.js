@@ -34,7 +34,7 @@ angular.module('myApp.mainpage', [
             vm.boxes.History,
             vm.boxes.Rankings,
             vm.boxes.Contact,
-            vm.boxes.Null
+            vm.boxes.Sponsors
 	   ]
     });
   

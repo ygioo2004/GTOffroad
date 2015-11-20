@@ -51,9 +51,9 @@
         "text": "For general information or inquiries, contact the team at: georgiatechoffroad@gmail.com"
     },
 
-    "Null": {
-        "desc": "",
-        "link": "mainpage",
+    "Sponsors": {
+        "desc": "Sponsors",
+        "link": "sponsors",
         "text": ""
     }
 

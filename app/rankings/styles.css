@@ -27,7 +27,6 @@
 .ranking-item-container{
     position: relative;
     overflow: hidden;
-    margin-left: 20px;
     min-height: 400px;
 }
 

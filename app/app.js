@@ -10,6 +10,7 @@ angular.module('myApp', [
   'myApp.history',
   'myApp.rankings',
   'myApp.directives',
+  'myApp.sponsors',
   'myApp.version'
 ])
 .config(['$routeProvider', function($routeProvider) {
