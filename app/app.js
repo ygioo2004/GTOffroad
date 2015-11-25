@@ -11,6 +11,7 @@ angular.module('myApp', [
   'myApp.rankings',
   'myApp.directives',
   'myApp.sponsors',
+  'myApp.gtor_info',
   'myApp.version'
 ])
 .config(['$routeProvider', function($routeProvider) {
