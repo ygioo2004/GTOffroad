@@ -6,13 +6,17 @@
     </div>
 -->
     <div class="mainpage-temp-rsvp" id="foobar">
-        Shop Nights: Tuesday and Thursday at 7pm <br />
-        Please Submit an Interest Form if you Want to Join the Team {{mainpage.randImageIndex}}
+        Shop Nights: Tuesday and Thursday at 7pm, Sunday at 4pm <br />
+        Please Submit an Interest Form if You Want to Join the Team
     </div>
     <div class="mainpage-box-container" > 
         <div ng-repeat="box in mainpage.box">	
             <box-item data="box" image-cycle="mainpage.images" cycle-num="mainpage.randImageIndex"></box-item>
         </div>    
+        
+
     </div>
+    
+    <app-footer></app-footer>
 </div>
 

@@ -23,7 +23,7 @@ body {
 
 
 .homepage-main-window{
-    position: absolute;
+    position: relative;
     margin-top: 50px;
     width: 100%;
     z-index: 20;
@@ -39,3 +39,4 @@ body {
     left: 10px;
     cursor: pointer;
 }
+
