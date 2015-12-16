@@ -10,8 +10,6 @@ angular.module('myApp.rankings', ['ngRoute'])
 }])
 
 .controller('RankingsCtrl', ['$location', '$window', function(location, $window) {
-    $window.scroll(0,0);                         
-    this.test = 'foo';
     this.ranks = [
         {
             year: 2003,

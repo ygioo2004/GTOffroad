@@ -10,6 +10,8 @@ angular.module('myApp', [
   'myApp.history',
   'myApp.rankings',
   'myApp.directives',
+  'myApp.sponsors',
+  'myApp.gtor_info',
   'myApp.version'
 ])
 .config(['$routeProvider', function($routeProvider) {
@@ -20,12 +22,10 @@ angular.module('myApp', [
 		$location.url(addr);
 	}
     
-    this.jumpToLocation = function(){
-        $location.hash("foobar");
+    this.jumpToLocation = function(value){
+        $location.hash(value);
         $anchorScroll();
-        console.log("activated");
     }
-    
-    this.foo = "bar";
+
     
 }])

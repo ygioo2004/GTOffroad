@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="interested/styles.css">
   <link rel="stylesheet" href="history/styles.css">
   <link rel="stylesheet" href="rankings/styles.css">
+  <link rel="stylesheet" href="sponsors/styles.css">
+  <link rel="stylesheet" href="gtor_info/styles.css">
   <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css"/>
   <link rel="stylesheet" href="directives/styles/boxItem.css"/>
   <link rel="stylesheet" href="directives/styles/footer.css"/>
@@ -33,18 +35,17 @@
   <![endif]-->
   <div class="homepage-container">
         
-            <!--this holds the picture at the top-->
-            <div class="homepage-main-window" ng-cloak> 
-                <div class="homepage-main-picture-container" ng-click="root.changeLoc('/')">    
-                    <img src="images/GTOR_logo.PNG" width="auto" height="100px"/>
-                </div>
+        <!--this holds the picture at the top-->   
+        <div class="homepage-main-window" ng-cloak> 
+            <div class="homepage-main-picture-container" ng-click="root.changeLoc('/')"> 
+                <img id="scrollTop" src="images/GTOR_logo.PNG" width="auto" height="100px"/>
             </div>
+        </div>
 
-    
-            <div ng-view>
 
-            </div>        
-  
+        <div ng-view></div>        
+        <app-footer></app-footer>
+
     </div>
 
             
@@ -63,6 +64,8 @@
     <script type="text/javascript" src="interested/interested.js"></script>
     <script type="text/javascript" src="history/history.js"></script>
     <script type="text/javascript" src="rankings/rankings.js"></script>
+    <script type="text/javascript" src="sponsors/sponsors.js"></script>
+    <script type="text/javascript" src="gtor_info/gtor_info.js"></script>
     <script type="text/javascript" src="components/version/version.js"></script>
     <script type="text/javascript" src="components/version/version-directive.js"></script>
     <script type="text/javascript" src="components/version/interpolate-filter.js"></script>
