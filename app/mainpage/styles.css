@@ -52,7 +52,7 @@
 
 .mainpage-temp-rsvp > a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .mainpage-temp-rsvp > a:hover {

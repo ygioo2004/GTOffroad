@@ -21,7 +21,10 @@ angular.module('myApp.sponsors', ['ngRoute'])
         'chevron' : "http://www.chevron.com/",
         'sae' : "https://www.sae.org/",
         'fox_shox' : "http://www.ridefox.com/",
-        'polaris' : "http://www.polaris.com/"
+        'polaris' : "http://www.polaris.com/",
+        'shell' : "http://www.shell.com/",
+        'textron' : "http://www.textron.com/",
+        'tie_down' : "http://www.tiedown.com/"
     }
     
 
