@@ -24,7 +24,8 @@ angular.module('myApp.sponsors', ['ngRoute'])
         'polaris' : "http://www.polaris.com/",
         'shell' : "http://www.shell.com/",
         'textron' : "http://www.textron.com/",
-        'tie_down' : "http://www.tiedown.com/"
+        'tie_down' : "http://www.tiedown.com/",
+        'metlab' : 'http://www.metlabheattreat.com/'
     }
     
 

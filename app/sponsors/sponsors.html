@@ -1,17 +1,13 @@
 <div class="sponsors-wrapper">
     <h2>Sponsors</h2>
     <hr/>
-    <div class="sponsor-item-container">
-        
-    <div class="sponsor-list-container">
-        <div class="sponsor-detail-container" ng-repeat="(sponsor, link) in sponsors.sponsors">
-            <a href="{{link}}" target="_blank">
-                <img ng-src="images/sponsor_logos/{{sponsor}}.png" width="100%"/>
-            </a>
+    <div class="sponsor-item-container">        
+        <div class="sponsor-list-container">
+            <div class="sponsor-detail-container" ng-repeat="(sponsor, link) in sponsors.sponsors">
+                <a class="sponser-item" href="{{link}}" target="_blank">
+                    <img ng-src="images/sponsor_logos/{{sponsor}}.png" width="100%" />
+                </a>
+            </div>
         </div>
-
-    </div>
-
-        
     </div>
 </div>
