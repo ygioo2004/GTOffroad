@@ -12,6 +12,7 @@ angular.module('myApp', [
   'myApp.directives',
   'myApp.sponsors',
   'myApp.gtor_info',
+  'myApp.how_do_i_join',
   'myApp.version'
 ])
 .config(['$routeProvider', function($routeProvider) {
